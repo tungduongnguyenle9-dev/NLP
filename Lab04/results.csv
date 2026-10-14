@@ -1,0 +1,5 @@
+Experiment,Representation,Features,Classifier,Vocabulary,Training time,Accuracy,Precision,Recall,F1
+Baseline / Model A / N-gram Unigram,TF-IDF,Unigram,Logistic Regression,92647,10.92587423324585,0.9032,0.8952941176470588,0.9132,0.9041584158415842
+Model B,Avg Word2Vec,,Logistic Regression,,,0.8188,0.808198,0.836,0.821864
+Model C,TF-IDF,Unigram,Linear SVM,,,0.9034,0.894716,0.9144,0.904451
+N-gram Uni + Bigram,TF-IDF,Unigram + Bigram,Logistic Regression,2110390,60.812531,,,,0.902909
