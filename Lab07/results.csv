@@ -1,0 +1,23 @@
+# Experiment 2: Number of attention heads
+Heads,d_k,Parameters,Training time,Accuracy,F1
+1,128,1412609,87.57,0.6972,0.6919
+2,64,1412609,112.03,0.7324,0.7402
+4,32,1412609,123.27,0.7312,0.7417
+8,16,1412609,148.25,0.7428,0.7532
+
+# Experiment 4: Transformer vs LSTM
+Model,Parameters,Training time,Accuracy,Precision,Recall,F1
+LSTM,1329729,20.92,0.64,0.616,0.797,0.6949
+Transformer,1412609,123.27,0.7312,0.7333,0.7504,0.7417
+
+# Experiment 5: Sequence length
+Length,Tokens retained,Attention memory,Training time,F1
+32,20.58%,1024,18.91,0.6232
+64,39.58%,4096,41.42,0.6941
+128,69.04%,16384,124.34,0.745
+256,89.95%,65536,257.88,0.7699
+
+# Experiment 6: Pooling strategy
+Pooling,Accuracy,F1,Training time
+Mean,0.7312,0.7417,123.27
+CLS-style,0.5732,0.6041,98.73

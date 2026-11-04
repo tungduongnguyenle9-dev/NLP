@@ -24,9 +24,6 @@ Attention weights có thể giúp quan sát mô hình đang chú ý vào những
 
 Attention giúp mô hình khai thác thông tin từ nhiều vị trí trong câu, nhưng vẫn có hạn chế khi xử lý những review có cách diễn đạt phức tạp hoặc cảm xúc không rõ ràng.
 
-## Dữ liệu đối chiếu
-
-Nguồn: IMDb 50K, tập test 5.000 review. Các dòng dưới đây lấy từ dự đoán thực tế của `AttentionClassifier` trong `self_attention.ipynb` (độ dài tối đa 100 token). `P(positive)` là xác suất model gán cho lớp positive. Chỉ số dòng bắt đầu từ 0, không tính hàng tiêu đề. Cột review chỉ trích phần đầu; dùng chỉ số dòng để đọc toàn bộ review trong `IMDB Dataset.csv` trước khi phân tích.
 
 ### 3 dự đoán đúng
 
