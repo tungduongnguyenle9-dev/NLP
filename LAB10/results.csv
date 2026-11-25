@@ -1,0 +1,15 @@
+experiment,setting,samples,em,f1,training_time_sec
+Exp1_ContextLength,max_length=128,300,19.0,27.49,1467.2
+Exp1_ContextLength,max_length=256,300,5.67,12.9,714.7
+Exp1_ContextLength,max_length=384,300,4.67,12.95,877.0
+Exp2_MainModel_Val,distilbert_max384_stride128_ep3,300,19.67,28.12,851.5
+Exp3_EM_vs_F1_Test,Baseline (Keyword Overlap),400,13.5,23.7,
+Exp3_EM_vs_F1_Test,Fine-tuned Transformer (DistilBERT),400,24.25,31.91,
+Exp4_LexicalOverlap_Test,Transformer | High Lexical Overlap (>= 0.6),281,25.27,33.73,
+Exp4_LexicalOverlap_Test,Baseline | High Lexical Overlap (>= 0.6),281,14.95,25.6,
+Exp4_LexicalOverlap_Test,Transformer | Low Lexical Overlap (< 0.6),119,21.85,27.62,
+Exp4_LexicalOverlap_Test,Baseline | Low Lexical Overlap (< 0.6),119,10.08,19.23,
+Exp5_AnswerLength_Test,length=1 tokens,121,26.45,30.61,
+Exp5_AnswerLength_Test,length=2-3 tokens,183,26.78,35.14,
+Exp5_AnswerLength_Test,length=4-6 tokens,61,16.39,29.33,
+Exp5_AnswerLength_Test,length=7+ tokens,35,17.14,24.1,
